@@ -1,0 +1,43 @@
+.navbar {
+    margin-top: 10px;
+    background: linear-gradient(to right, #260064, #b600ad); 
+    color: white; 
+    padding: 15px 60px; 
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-around; /* Zorgt ervoor dat het logo en menu aan weerszijden staan */
+    align-items: center; /* Centreert de items verticaal */
+}
+
+.navbar-logo {
+    font-size: 24px; /* Grootte van de logo-tekst */
+    text-decoration: none; /* Verwijdert de onderlijn */
+    color: white; /* Kleur van de logo-tekst */
+}
+
+.navbar-menu {
+    list-style: none; /* Verwijdert de opsommingstekens van de lijst */
+    display: flex; /* Flexbox voor het menu */
+    gap: 20px; /* Ruimte tussen de menu-items */
+}
+
+.navbar-item {
+    margin: 0; /* Verwijdert de standaard marges */
+}
+
+.navbar-link {
+    text-decoration: none; /* Verwijdert de onderlijn */
+    color: white; /* Kleur van de link */
+    transition: color 0.3s ease; /* Voor een soepele overgang bij hover */
+}
+
+.navbar-link:hover {
+    color: #1228f3; /* Kleur bij hover */
+}

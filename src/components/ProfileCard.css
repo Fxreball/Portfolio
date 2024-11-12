@@ -1,0 +1,98 @@
+.card {
+    background-color: #101030;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+    overflow: hidden;
+    max-width: 600px;
+    text-align: center;
+    margin: 20px; 
+    transition: all 0.3s ease; 
+}
+
+.card h2 {
+    margin-bottom: 0; 
+}
+
+.card p {
+    margin-bottom: 30px;
+}
+
+.card .profile {
+    border-radius: 5px 5px 0 0; 
+    width: 50%; 
+    height: auto; 
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.btn-social {
+    display: flex;           
+    align-items: center;     
+    padding: 10px 20px;        
+    background-color: #151a46;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;            
+    transition: background-color 0.3s;
+    width: 50%; 
+    height: 30px;
+    margin: 20px auto; 
+}
+
+.btn-social .icon {
+    width: 25px; 
+    height: 25px; 
+    filter: brightness(0) invert(1); 
+}
+
+.btn-social span {
+    color: white;
+    flex: 1; 
+    text-align: center; 
+    display: block; 
+}
+
+.btn-social:hover {
+    background-color: #1d2569; 
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 10px; 
+        border-radius: 10px;
+        width: 350px;
+        height: auto;
+    }
+
+    .btn-social {
+        width: 60%; 
+        height: 25px;
+        max-height: 100px;
+        margin: 10px auto;
+    }
+
+    .card h2 {
+        font-size: 1rem;
+        margin: 10px 0; 
+    }
+
+    .card p {
+        font-size: 0.7rem; 
+    }
+
+    .card span {
+        font-size: 0.85rem; 
+    }
+
+    .card .profile {
+        margin: 10px;
+        height: 200px; 
+        width: auto;
+    }
+
+    .card .icon {
+        height: 20px;
+        width: auto;
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "short_name": "Owen Coenraad",
+  "name": "Owen Coenraad's Social Media page.",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#0d0d24"
+}
