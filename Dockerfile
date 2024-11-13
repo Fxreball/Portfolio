@@ -1,17 +1,29 @@
-# Stap 1: Gebruik een Node image om de app te bouwen
-FROM node:18 AS build
+# Gebruik een Node.js image voor het bouwen
+FROM node:16 as build
 
+# Maak een werkdirectory aan in de container
 WORKDIR /app
+
+# Kopieer package.json en package-lock.json
+COPY package*.json ./
+
+# Installeer dependencies
+RUN npm install
+
+# Kopieer de rest van de applicatiecode naar de container
 COPY . .
 
-RUN npm install
+# Bouw de React-app
 RUN npm run build
 
-# Stap 2: Gebruik een Nginx image om de app te hosten
+# Gebruik een lichtgewicht webserver om de app te serveren
 FROM nginx:alpine
 
+# Kopieer de gebuilde bestanden naar Nginx
 COPY --from=build /app/build /usr/share/nginx/html
 
-# Zorg ervoor dat Nginx draait op poort 80
-EXPOSE 8080
+# Exposeer de poort waarop Nginx draait
+EXPOSE 80
+
+# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
