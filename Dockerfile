@@ -1,5 +1,5 @@
 # Gebruik een Node.js image voor het bouwen
-FROM node:16 as build
+FROM node:16 AS build
 
 # Maak een werkdirectory aan in de container
 WORKDIR /app
