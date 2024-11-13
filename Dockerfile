@@ -12,5 +12,6 @@ FROM nginx:alpine
 
 COPY --from=build /app/build /usr/share/nginx/html
 
+# Zorg ervoor dat Nginx draait op poort 80
 EXPOSE 8080
 CMD ["nginx", "-g", "daemon off;"]
