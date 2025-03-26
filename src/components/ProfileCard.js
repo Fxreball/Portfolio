@@ -5,6 +5,7 @@ import instagram from '../images/instagram.png';
 import github from '../images/github.png';
 import linkedin from '../images/linkedin.png';
 import discord from '../images/discord.png';
+import applemusic from '../images/applemusic.png';
 
 const ProfileCard = () => {
   return (
@@ -28,6 +29,10 @@ const ProfileCard = () => {
         <a href="https://linkedin.com/in/owencoenraad" className="btn-social" target="_blank" rel="noopener noreferrer">
           <img src={linkedin} alt="LinkedIn" className="icon" />
           <span>LinkedIn</span>
+        </a>
+        <a href="https://music.apple.com/profile/owencoenraad" className="btn-social" target="_blank" rel="noopener noreferrer">
+          <img src={applemusic} alt="Apple Music" className="icon" />
+          <span>Apple Music</span>
         </a>
       </div>
     </div>
